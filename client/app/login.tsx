@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, useColorScheme, ToastAndroid, View, Button } from 'react-native';
+import { useColorScheme, ToastAndroid, View, Button } from 'react-native';
 import auth from '@react-native-firebase/auth';
 import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 

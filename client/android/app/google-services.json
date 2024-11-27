@@ -12,7 +12,28 @@
           "package_name": "com.anonymous.spotify"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1044632252747-01qvjrevbsr22gqc6or8hlo0su8j5o3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anonymous.spotify",
+            "certificate_hash": "a979f41e13a8d7ed8acfd99bddfb33ea6d45ca61"
+          }
+        },
+        {
+          "client_id": "1044632252747-1r5kknk98ab55j1ce9crav0bf8oruje3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anonymous.spotify",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1044632252747-2hp0ka7ofe9giln2jl1s31nm7n3j9ikc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAp43J0WJRThfQ_HLWUdrFYzQKXBsqN868"
@@ -20,7 +41,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044632252747-2hp0ka7ofe9giln2jl1s31nm7n3j9ikc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
