@@ -1,61 +1,43 @@
-import { Image, StyleSheet, Platform, useColorScheme, ToastAndroid, View, Button } from 'react-native';
-import auth from '@react-native-firebase/auth';
-import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
+import { Alert, FlatList, View, StyleSheet } from "react-native";
+import TrackListItem from "@/components/TrackListItem";
+import { useEffect, useState } from "react";
+import { fetchAllTracks } from "@/api/Api";
+import { Track } from "@/types";
 
-  export default function HomeScreen() {
-    const colorScheme = useColorScheme();
-    GoogleSignin.configure({
-      webClientId: '1044632252747-2hp0ka7ofe9giln2jl1s31nm7n3j9ikc.apps.googleusercontent.com',
-    });
-    function sighOut(){
-      auth().signOut().then(()=>{
-        console.log("SignOut");
-        GoogleSignin.revokeAccess();
-      })
-    }
-    async function onGoogleButtonPress() {
-      try{
-        // Check if your device supports Google Play
-      await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true });
-      // Get the users ID token
-      const userInfo = await GoogleSignin.signIn();
-      console.log(userInfo.data?.user);
-    
-      // Create a Google credential with the token
-      const googleCredential = auth.GoogleAuthProvider.credential(userInfo!.data!.idToken);
-      console.log(googleCredential);
-      if(googleCredential){
-        ToastAndroid.show("DANG NHAP THANH CONG", ToastAndroid.SHORT);
+export default function HomeScreen() {
+  const [tracks, setTracks] = useState<Track[]>([]);
+
+  useEffect(() => {
+    const loadTracks = async () => {
+      try {
+        const data = await fetchAllTracks();
+        setTracks(data);
+      } catch (error) {
+        Alert.alert("Error", "Failed to fetch items. Please try again later.");
       }
-      // Sign-in the user with the credential
-      return auth().signInWithCredential(googleCredential);
-      }catch(error: any){
-        if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-          ToastAndroid.show("error occured SIGN_IN_CANCELLED", ToastAndroid.SHORT);
-          console.log("error occured SIGN_IN_CANCELLED");
-          // user cancelled the login flow
-      } else if (error.code === statusCodes.IN_PROGRESS) {
-          console.log("error occured IN_PROGRESS");
-          // operation (f.e. sign in) is in progress already
-      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-          console.log("error occured PLAY_SERVICES_NOT_AVAILABLE");
-      } else {
-          console.log(error)
-          console.log("error occured unknow error");
-          ToastAndroid.show("BAN DA HUY DANG NHAP!", ToastAndroid.SHORT);
-      }
-      }
-    }
-    return (
-      <View style={{flex: 2, backgroundColor:"grey",display:"flex",justifyContent:"center",alignItems:"center"}}>
-      <Button color={"green"}
-        title="Google Sign-In"
-        onPress={()=>onGoogleButtonPress()}
-      />
-      <Button color={"blue"}
-        title="Google Sign-Out"
-        onPress={()=>sighOut()}
+    };
+
+    loadTracks();
+  }, []);
+  
+  return (
+      <View style={styles.container}>
+        <FlatList
+        data={tracks}
+        renderItem={({ item }) => <TrackListItem track={item} />}
+        showsVerticalScrollIndicator={false}
+        onEndReached={fetchAllTracks}
+        onEndReachedThreshold={1}
+        style = {{backgroundColor: "black"}}
       />
       </View>
-    );
-  }
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#121212",
+    padding: 10,
+  },
+});
