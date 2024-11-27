@@ -1,30 +1,83 @@
-var express = require('express'); 
-var bodyParser = require("body-parser"); 
-var app = express(); 
-app.use(cors()); 
-app.use(express.static('public')); 
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true })) 
-// json sample 
-const books = JSON.stringify([ 
-{ title: "The Alchemist", author: "Paulo Coelho", year: 1988 }, 
-{ title: "The Prophet", author: "Kahlil Gibran", year: 1923 } 
-]); 
-const farms = JSON.stringify([ 
-{ name: "Farm A", description: "nông trại ", image: "1.jpg", temperature: 29.4,  humid: 50.2}, 
-{ name: "Farm B", description: "nông trại ", image: "2.jpg", temperature: 25.4,  humid: 53.1}, 
-{ name: "Farm C", description: "nông trại ", image: "3.jpg", temperature: 20.1,  humid: 43.4}, 
-]); 
-//RESTFull API 
-app.get('/getAllBooks', function (req, res) { 
-res.send(books); 
-}) 
-app.get('/getAllFarms', function (req, res) { 
-res.send(farms); 
-}) 
-//server 
-var server = app.listen(5555, function () { 
-var host = server.address().address 
-var port = server.address().port 
-console.log("Example app listening at http://%s:%s", host, port) 
-}) 
+const express = require("express");
+const admin = require("firebase-admin");
+const serviceAccount = require("./spotify-5608f-firebase-adminsdk-3haas-1e1e199068.json");
+
+// Khởi tạo Firebase Admin SDK
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+});
+
+const db = admin.firestore();
+const app = express();
+const PORT = process.env.PORT || 3000; // Cấu hình PORT động
+app.use(express.json()); // Để xử lý JSON trong body của các yêu cầu
+
+// Endpoint để lấy tất cả dữ liệu từ Firestore
+app.get("/all", async (req, res) => {
+  try {
+    const jsonCollectionRef = db.collection("spotify"); // Tên collection của bạn
+    const snapshot = await jsonCollectionRef.get();
+
+    const data = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    res.status(200).json(data);
+  } catch (error) {
+    console.error("Lỗi khi lấy dữ liệu từ Firestore:", error);
+    res.status(500).send("Lỗi khi lấy dữ liệu");
+  }
+});
+
+// Endpoint để xóa tài liệu theo ID
+app.delete("/delete/:id", async (req, res) => {
+  try {
+    const docId = req.params.id;
+    await db.collection("spotify").doc(docId).delete();
+    res.status(200).send(`Xóa tài liệu với ID: ${docId} thành công`);
+  } catch (error) {
+    console.error("Lỗi khi xóa tài liệu:", error);
+    res.status(500).send("Lỗi khi xóa tài liệu");
+  }
+});
+
+// Endpoint để cập nhật tài liệu theo ID
+app.put("/update/:id", async (req, res) => {
+  try {
+    const docId = req.params.id;
+    const newData = req.body;
+    await db.collection("spotify").doc(docId).update(newData);
+    res.status(200).send(`Cập nhật tài liệu với ID: ${docId} thành công`);
+  } catch (error) {
+    console.error("Lỗi khi cập nhật tài liệu:", error);
+    res.status(500).send("Lỗi khi cập nhật tài liệu");
+  }
+});
+
+// Endpoint để tìm kiếm theo tên
+app.get("/search", async (req, res) => {
+  try {
+    const name = req.query.name;
+    const jsonCollectionRef = db.collection("spotify");
+    const snapshot = await jsonCollectionRef.where("name", "==", name).get();
+
+    if (snapshot.empty) {
+      return res.status(404).send("Không tìm thấy tài liệu với tên được cung cấp");
+    }
+
+    const data = snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    res.status(200).json(data);
+  } catch (error) {
+    console.error("Lỗi khi tìm kiếm tài liệu:", error);
+    res.status(500).send("Lỗi khi tìm kiếm tài liệu");
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server đang chạy tại http://localhost:${PORT}`);
+});
