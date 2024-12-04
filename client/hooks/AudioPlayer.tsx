@@ -3,7 +3,7 @@ import { Audio, AVPlaybackStatus } from "expo-av";
 import { Sound } from "expo-av/build/Audio";
 import { Track } from "../types";
 
-export const AudioPlayer = (track : Track| null | undefined) => {
+export const AudioPlayer = (track : Track | null | undefined) => {
   const [sound, setSound] = useState<Sound>();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLooping, setIsLooping] = useState(false); // State for looping status
@@ -12,8 +12,11 @@ export const AudioPlayer = (track : Track| null | undefined) => {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 
   useEffect(() => {
-    playTrack();
+    if (track?.audio_file) {
+      playTrack();
+    }
   }, [track]);
+
 
   useEffect(() => {
     return sound

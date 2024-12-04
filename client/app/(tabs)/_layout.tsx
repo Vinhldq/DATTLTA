@@ -10,19 +10,33 @@ import Feather from "@expo/vector-icons/Feather";
 import { BottomTabBar } from "@react-navigation/bottom-tabs";
 import Player from "@/components/Player";
 import Entypo from "@expo/vector-icons/Entypo";
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from "@react-navigation/native-stack";
+import {
+  NavigationContainer,
+  NavigationIndependentTree,
+  useNavigation,
+} from "@react-navigation/native";
+import LoginScreen from "../login";
+import PlayerTrackScreen from "@/components/PlayerTrackScreen";
 
+type RootStackParamList = {
+  Main: undefined;
+  Admin: undefined;
+  PlayerTrackScreen: undefined;
+  // Add other screens if needed
+};
 
-
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>["name"];
-  color: string;
-}) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
-}
+type AlbumScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "Main"
+>;
 
 function TabLayout() {
   const colorScheme = useColorScheme();
+  const navigation = useNavigation<AlbumScreenNavigationProp>();
 
   return (
     <Tabs
@@ -33,14 +47,12 @@ function TabLayout() {
         },
       }}
       tabBar={(props) => (
-        <Link href="/modal" asChild>
-          <Pressable>
-              <View>
-                <Player />
-                <BottomTabBar {...props} />
-              </View>
-          </Pressable>
-        </Link>
+        <Pressable onPress={() => navigation.navigate("PlayerTrackScreen")}>
+          <View>
+            <Player />
+            <BottomTabBar {...props} />
+          </View>
+        </Pressable>
       )}
     >
       <Tabs.Screen
@@ -76,7 +88,7 @@ function TabLayout() {
       />
 
       <Tabs.Screen
-        name="Search"
+        name="two"
         options={{
           title: "Search",
           tabBarIcon: ({ color }) => (
@@ -113,3 +125,37 @@ function TabLayout() {
     </Tabs>
   );
 }
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
+
+function Navigation() {
+  return (
+    <NavigationIndependentTree>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Group>
+            {/* <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        /> */}
+            <Stack.Screen
+              name="Main"
+              component={TabLayout}
+              options={{ headerShown: false }}
+            />
+          </Stack.Group>
+          <Stack.Group screenOptions={{ presentation: "modal" }}>
+            <Stack.Screen
+              name="PlayerTrackScreen"
+              component={PlayerTrackScreen}
+              options={{ headerShown: false }}
+            />
+          </Stack.Group>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </NavigationIndependentTree>
+  );
+}
+
+export default Navigation;

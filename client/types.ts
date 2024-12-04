@@ -1,25 +1,25 @@
+// API tĩnh
 export interface Track {
-    album: any;
-    title: any;
-    id: string;
-    name: string;
-    artists: string;
-    image: string;
-    audio_file: string;
-  };
-  export type Album = {
-    id: string;
-    name: string;
-    images: Image[];
-  };
-  export type Artist = {
-    id: string;
-    name: string;
-    images?: Image[];
-  };
-  
-  export type Image = {
-    url: string;
-    height?: number;
-    width?: number;
-  };
+  id: string;
+  name: string;
+  artists: string[];
+  image: string;
+  audio_file: string;
+  musician: string[];
+  category: string[];
+  like: number;
+  show: string;
+};
+
+// API trên firebase
+// export interface Track {
+//   id: string;
+//   name: string;
+//   artists: string;
+//   image: string;
+//   audio_file: string;
+//   musician: string;
+//   category: string;
+//   like: number;
+//   show: string;
+// };

@@ -27,8 +27,9 @@ const Player = () => {
           <Image source={{ uri: track.image }} style={styles.image} />
 
           <View style={{ flex: 1 }}>
-            <Text style={styles.title}>{track.name}</Text>
-            <Text style={styles.subtitle}>{track.artists}</Text>
+            <Text style={styles.title} numberOfLines={1}>{track.name}</Text>
+            <Text style={styles.subtitle} numberOfLines={1}>{track.artists.join(", ")}</Text>
+            {/* <Text style={styles.subtitle} numberOfLines={1}>{track.artists}</Text> */}
           </View>
 
           <View>

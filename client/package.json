@@ -19,6 +19,7 @@
     "@react-native-community/cli": "latest",
     "@react-native-firebase/app": "^21.5.0",
     "@react-navigation/bottom-tabs": "^7.0.0",
+    "@react-navigation/material-top-tabs": "^7.0.18",
     "@react-navigation/native": "^7.0.0",
     "axios": "^1.7.8",
     "expo": "~52.0.7",

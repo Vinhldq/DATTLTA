@@ -1,0 +1,380 @@
+{
+  "spotify": [
+    {
+      "id": "0MDCOhptVPLh4Vr7DDqQ",
+      "artists": ["Imagine Dragons", "JID"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879080/Imagine_Dragons_x_J.I.D_-_Enemy_from_the_series_Arcane_League_of_Legends_m07kaa.mp3",
+      "category": ["Alternative"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/lbcc6zrq3gqjgf2l6t22.jpg",
+      "like": 0,
+      "musician": ["Riot"],
+      "name": "Enemy (from the series Arcane League of Legends)"
+    },
+
+    {
+      "id": "1kpalaTOSOcNbNvHJNNd",
+      "artists": ["JVKE"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856373/y2meta.com_-_JVKE_-_golden_hour_official_music_video_64_kbps_wj5ux4.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736878/rzqdvvcunqbwyrlzlx7l.jpg",
+      "like": 0,
+      "musician": ["JVKE", "Zac Lawson"],
+      "name": "Golden Hour"
+    },
+
+    {
+      "id": "6LBJmvhIgNDeWfjjcPjm",
+      "artists": ["One Direction"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730857097/y2meta.com_-_One_Direction_-_One_Thing_128_kbps_kyqxuu.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736879/cpf2dmyj5en7itabrw0a.jpg",
+      "like": 0,
+      "musician": ["One Direction"],
+      "name": "One Thing"
+    },
+
+    {
+      "id": "8TumLa43BG1DL1qjFEVn",
+      "artists": ["Bruno Mars"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879080/Bruno_Mars_-_Runaway_Baby_Official_Lyric_Video_c2vn83.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/pthctcga3bxmwiufocst.jpg",
+      "like": 0,
+      "musician": ["Bruno Mars"],
+      "name": "Runaway Baby"
+    },
+
+    {
+      "id": "CS3h4TNrTxBKPphXrd66",
+      "artists": ["Vũ.", "Madihu"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879098/V%C3%AC_Anh_%C4%90%C3%A2u_C%C3%B3_Bi%E1%BA%BFt_-_Madihu_Feat._V%C5%A9.___Official_MV_bbybu1.mp3",
+      "category": ["R&B", "Soul"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/vg31vh7bmels5zgtrutt.jpg",
+      "like": 0,
+      "musician": ["Vũ."],
+      "name": "Vì Anh Đâu Có Biết"
+    },
+
+    {
+      "id": "Cjyt5x3XjcJhTPgmEx9e",
+      "artists": ["Willistic", "Gnob"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1732040844/VUI_L%C3%80_%C4%90%C6%AF%E1%BB%A2C_Feat._Willistic_Gnob_qill46.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dvaqheosl/image/upload/v1732040843/vuiladuoc_kaqtex.jpg",
+      "like": 0,
+      "musician": ["Willistic", "Gnob"],
+      "name": "Vui Là Được",
+      "show": "RapViet"
+    },
+
+    {
+      "id": "CkxHMVkdQFCH54eqyH0Y",
+      "artists": ["HIEUTHUHAI", "Negav", "Kewtiie"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731082680/blv0ddlv81googqad1rk.mp3",
+      "category": ["Reggae"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730856054/Ngu_mot_minh_mx1ql9.jpg",
+      "like": 0,
+      "musician": ["HIEUTHUHAI"],
+      "name": "Ngủ Một Mình"
+    },
+
+    {
+      "id": "E4hHThtdtLPrrVhc8RdP",
+      "artists": ["JustaTee", "Binz"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879082/Lyric_Video_C%C6%A1n_M%C6%B0a_Cu%E1%BB%91i_-_JustaTee_x_Binz_hwplux.mp3",
+      "category": ["R&B", "Soul"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/yxe2hzb5faqtes5aaniy.jpg",
+      "like": 0,
+      "musician": ["JustaTee"],
+      "name": "Cơn Mưa Cuối"
+    },
+
+    {
+      "id": "I1rrVXuJK7kh1DWJLdPs",
+      "artists": ["HURRYKNG", "HIEUTHUHAI", "MANBO"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731052411/HURRYKNG_HIEUTHUHAI_MANBO___H%E1%BA%B9n_G%E1%BA%B7p_Em_D%C6%B0%E1%BB%9Bi_%C3%81nh_Tr%C4%83ng___Official_Video_tjxfqr.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/mbsvek2hvjjojo5kngjk.jpg",
+      "like": 0,
+      "musician": ["HURRYKNG", "HIEUTHUHAI", "MANBO"],
+      "name": "Hẹn Gặp Em Dưới Ánh Trăng"
+    },
+
+    {
+      "id": "O3ZYp83GDpnMJ7uhkJYt",
+      "artists": ["Trong Hieu"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856651/CON-DUONG-TOI_ymcroj.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736876/zsyoh1hnqk9ic9m51qwf.jpg",
+      "like": 0,
+      "musician": ["Trong Hieu"],
+      "name": "Con Đường Tôi"
+    },
+
+    {
+      "id": "PFeRrvVjvOFcinBzwfOQ",
+      "artists": ["Chillies"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731053728/V%C3%B9ng_K%C3%BD_%E1%BB%A8c_-_Chillies_Official_Music_Video_oal5eh.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/yofid882whrcbggu8biy.jpg",
+      "like": 0,
+      "musician": ["Duy Khang", "Nhim Bien"],
+      "name": "Vùng Ký Ức"
+    },
+
+    {
+      "id": "PmGKTDpnYBxUNC480ZMX",
+      "artists": ["Maroon 5"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879089/Maroon_5_-_Sugar_Official_Music_Video_agcaiv.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/bschu4dynrfanal5tyd9.jpg",
+      "like": 0,
+      "musician": ["Maroon 5"],
+      "name": "Sugar"
+    },
+
+    {
+      "id": "QnD6IvvwhOeLGSXOR6C4",
+      "artists": ["RPT MCK", "Trung Trần"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879073/07._Th%C3%B4i_Em_%C4%90%E1%BB%ABng_%C4%90i_-_RPT_MCK_ft._Trung_Tr%E1%BA%A7n___99_the_album_jyczkq.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736876/kehvflvzjeeytbo3gqyy.jpg",
+      "like": 0,
+      "musician": ["MCK"],
+      "name": "Thôi Em Đừng Đi"
+    },
+
+    {
+      "id": "TkI0hE4jpdSTujBYDKBf",
+      "artists": ["Wiz Khalifa"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856380/y2meta.com_-_Wiz_Khalifa_-_See_You_Again_ft._Charlie_Puth_Official_Video_Furious_7_Soundtrack_128_kbps_feipsb.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736876/xudtoxirgajcgwfeskp2.png",
+      "like": 0,
+      "musician": [
+        "Andrew Cedar",
+        "Justin Franks",
+        "Charlie Puth",
+        "Cameron Thomaz"
+      ],
+      "name": "See You Again"
+    },
+
+    {
+      "id": "V1Mdp2vTOHB93kyfv4qH",
+      "artists": ["One Direction"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730857105/y2meta.com_-_One_Direction_-_What_Makes_You_Beautiful_Official_Video_128_kbps_amctwi.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736878/cqwfwpmtsi90dqulfswc.jpg",
+      "like": 0,
+      "musician": ["One Direction"],
+      "name": "What makes you beautiful"
+    },
+
+    {
+      "id": "VDgVa000hCG3C6xXNRIp",
+      "artists": ["Sơn Tùng MTP"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856651/MUON-ROI-MA-SAO-CON_tbmmlq.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/ybqsajnrsw0zobgchz6c.jpg",
+      "like": 0,
+      "musician": ["Sơn Tùng MTP"],
+      "name": "Muộn Rồi Mà Sao Còn"
+    },
+
+    {
+      "id": "VQQubwtGAwDNqCeJcseH",
+      "artists": ["ROSE", "Bruno Mars"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856376/y2meta.com_-_ROS%C3%89_Bruno_Mars_-_APT._Official_Music_Video_128_kbps_p8ydez.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/gtwvmj8okswvkgalcnxd.jpg",
+      "like": 0,
+      "musician": ["ROSE"],
+      "name": "APT"
+    },
+
+    {
+      "id": "YFyQtKxA69hNuqqm2iMP",
+      "artists": ["Đen Vâu"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879082/%C4%90en_-_FRIENDSHIP_ft._Friends_M_V_iz1ixg.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736878/qze5cnfb9mtztyh04ern.jpg",
+      "like": 0,
+      "musician": ["Đen Vâu"],
+      "name": "FRIENDSHIP"
+    },
+
+    {
+      "id": "Zapeqjr5dkvNc8EKHH5n",
+      "artists": ["Dangrangto", "Puppy"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1732040146/PUPPY_DANGRANGTO_-_WRONG_TIMES_Live_at_LAB_RADAR_yd1uxp.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dvaqheosl/image/upload/v1732040138/wrong_time_mqfjnb.jpg",
+      "like": 0,
+      "musician": ["Dangrangto", "Puppy"],
+      "name": "Wrong Time"
+    },
+
+    {
+      "id": "bxSUTs6ApGsswmhurF0v",
+      "artists": ["Pharrell Williams"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856373/y2meta.com_-_Pharrell_Williams_-_Happy_Video_64_kbps_dxlhoq.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736878/nfa7qidg5zsnkcafvuyp.jpg",
+      "like": 0,
+      "musician": ["Pharrell Williams"],
+      "name": "Happy"
+    },
+
+    {
+      "id": "eU4D9rinX19bkSCp1cI4",
+      "artists": ["Kai Đinh", "GREY D", "Hoàng Thùy Linh"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879091/Tr%C3%A1i_%C4%91%E1%BA%A5t_%C3%B4m_M%E1%BA%B7t_tr%E1%BB%9Di_-_KAI_%C4%90INH_x_GREY_D_x_HO%C3%80NG_THU%E1%BB%B2_LINH___performance_video_icn6vb.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736877/iqu4vl0uj2razeu77w07.jpg",
+      "like": 0,
+      "musician": ["Kai Đinh"],
+      "name": "Trái đất ôm Mặt trời"
+    },
+
+    {
+      "id": "g0WAeTS5cYD3wObq5rZS",
+      "artists": ["Sơn Tùng MTP"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1732811983/S%C6%A0N_T%C3%99NG_M-TP_%C4%90%E1%BB%AANG_L%C3%80M_TR%C3%81I_TIM_ANH_%C4%90AU_OFFICIAL_MUSIC_VIDEO_qcobvu.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1731478632/maxresdefault_if7lxw.jpg",
+      "like": 0,
+      "musician": ["Sơn Tùng MTP"],
+      "name": "Đừng làm trái tim anh đau"
+    },
+
+    {
+      "id": "i4R09QF1TWXYLrwAxgeM",
+      "artists": ["Maroon 5"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856375/y2meta.com_-_Maroon_5_-_Memories_Official_Video_128_kbps_q1jker.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736879/bvsnnxvzfhptt1diehoz.jpg",
+      "like": 0,
+      "musician": ["Maroon 5"],
+      "name": "Memories"
+    },
+
+    {
+      "id": "joqgCWpSuYWSzYGLCXFL",
+      "artists": ["Thịnh Suy"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731053790/Th%E1%BB%8Bnh_Suy_-_Th%E1%BA%AFc_M%E1%BA%AFc_M%C4%90X_bp7t3j.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736876/fto0uaws7nr1uxh98ovb.jpg",
+      "like": 0,
+      "musician": ["Thịnh Suy"],
+      "name": "Thắc Mắc?"
+    },
+
+    {
+      "id": "oyJou7gzGgdfPDVnoalv",
+      "artists": ["Vũ Cát Tường"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731053864/M%C6%A1_Lyrics_Video_-_V%C5%A9_C%C3%A1t_T%C6%B0%E1%BB%9Dng_ojjmri.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736879/hea5tvydriiwohu2yxev.jpg",
+      "like": 0,
+      "musician": ["Vũ Cát Tường"],
+      "name": "Mơ"
+    },
+
+    {
+      "id": "rNPrT23q4wy0SAxj90Wx",
+      "artists": ["HEARTSTEEL", "League of Legends", "BAEKHYUN"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731053514/HEARTSTEEL_-_PARANOIA_ft_mp3cut.net_lmbmqw.mp3",
+      "category": ["Hip-Hop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736879/souubndn4x9vztp84zv2.jpg",
+      "like": 0,
+      "musician": ["Riot"],
+      "name": "PARANOIA (with tobi lou, ØZI and Cal Scruby)"
+    },
+
+    {
+      "id": "t806IR8ezstyBXxAIfXI",
+      "artists": ["Jason Mraz"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856381/y2meta.com_-_Jason_Mraz_-_I_m_Yours_Official_Video_4K_Remaster_64_kbps_ca64na.mp3",
+      "category": ["Pop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736879/rve8xvzfyunkziwdl6kk.jpg",
+      "like": 0,
+      "musician": ["Jason Mraz"],
+      "name": "I'm Yours"
+    },
+
+    {
+      "id": "uT4vSbEKRwwe3RSZdjOx",
+      "artists": ["Madihu", "LowG"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730879091/Madihu_-_C%C3%B3_em_Feat._Low_G_Official_MV_fzp1fq.mp3",
+      "category": ["R&B", "Soul"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736876/lzrtpfd31wlytxul99om.jpg",
+      "like": 0,
+      "musician": ["Madihu"],
+      "name": "Có em"
+    },
+
+    {
+      "id": "vGBQFHWNvSKjUwyADjPC",
+      "artists": ["Robber", "Ngắn"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1732038635/QUA_T%E1%BB%AANG_KHUNG_H%C3%8CNH_Feat._Robber_Ng%E1%BA%AFn_w8xwia.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dvaqheosl/image/upload/v1732039248/hq720_wgy9by.jpg",
+      "like": 0,
+      "musician": ["Robber", "Ngắn"],
+      "name": "Qua Từng Khung Hình",
+      "show": "RapViet"
+    },
+
+    {
+      "id": "w0hubFyNUCwfkp9NLQEl",
+      "artists": ["HIEUTHUHAI"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730857133/y2meta.com_-_HIEUTHUHAI_-_Cho_Em_An_To%C3%A0n_prod._by_Kewtiie_Official_Lyric_Video_128_kbps_bfcsje.mp3",
+      "category": ["Hip-Hop"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736878/ypbzmdztlfz4xkibcvn8.jpg",
+      "like": 0,
+      "musician": ["HIEUTHUHAI"],
+      "name": "Cho Em An Toàn"
+    },
+
+    {
+      "id": "yQehKeXGJNpwxqkbntgc",
+      "artists": ["Rhyder"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856237/T%E1%BB%AB_Ch%E1%BB%91i_Hi%E1%BB%83u_-_Rhyder_-_Team_Andree_Right_Hand_Rap_Vi%E1%BB%87t_2023_MV_Lyrics_mp3cut.net_qzqb9a.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dvaqheosl/image/upload/v1731052293/2793deb5d61957a81ad6c2851cc7cbfe_cbtg1l.jpg",
+      "like": 0,
+      "musician": ["Rhyder"],
+      "name": "Từ chối hiểu",
+      "show": "RapViet"
+    },
+
+    {
+      "id": "zE15EDjbIeRhFsWKyYz7",
+      "artists": ["K'naan", "Adam Levine"],
+      "audio_file": "https://res.cloudinary.com/dvaqheosl/video/upload/v1731053624/Bang_Bang_New_Version_b7arya.mp3",
+      "category": ["Hip-Hop", "Rap"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/ftz292sajcify2ifd667.jpg",
+      "like": 0,
+      "musician": ["K'naan", "Adam Levine"],
+      "name": "Bang Bang (New Version) (cùng với Adam Levine)"
+    },
+
+    {
+      "id": "zFpTtmT0cF7Gl7gQBep4",
+      "artists": ["Avicii"],
+      "audio_file": "https://res.cloudinary.com/defywepch/video/upload/v1730856648/The-Nights_pojjg3.mp3",
+      "category": ["Dance"],
+      "image": "https://res.cloudinary.com/dsiwejvm9/image/upload/v1730736875/ckasj87wjwxs8xfheelg.png",
+      "like": 0,
+      "musician": [
+        "Gabriel Benjamin",
+        "Tim Bergling",
+        "John Feldmann",
+        "Nicholas Furlong",
+        "Jordan Suecof"
+      ],
+      "name": "The Nights"
+    }
+  ]
+}
